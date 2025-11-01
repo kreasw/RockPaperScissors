@@ -4,13 +4,13 @@ print("Welcome to ROCK PAPER SCISSORS")
 
 play_again = "Y"
 
-while play_again.upper() == "Y":
+while play_again.upper() == "Y": # the loop so game can repeat
     user_answer = input("Pick ROCK, PAPER or SCISSORS: ")
     user_answer_upper = user_answer.upper()
     print("")
 
 
-    computer = random.choice(["ROCK", "PAPER", "SCISSORS"])
+    computer = random.choice(["ROCK", "PAPER", "SCISSORS"]) # computer chooses randomly
 
     print("you choose " + user_answer_upper)
     print("Computer chose " + computer)
@@ -29,10 +29,10 @@ while play_again.upper() == "Y":
         (user_answer_upper == "SCISSORS" and computer == "ROCK"):
         print("You lose!")
 
-    else:
+    else: # If the user entered something invalid
         print("you choose a incorrect answer")
 
     print("")
 
 
-    play_again = input("Do you want to play again? (Y/N)")
+    play_again = input("Do you want to play again? (Y/N)") # asks if the user wants to play again
