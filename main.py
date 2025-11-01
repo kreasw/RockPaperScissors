@@ -35,4 +35,10 @@ while play_again.upper() == "Y": # the loop so game can repeat
     print("")
 
 
-    play_again = input("Do you want to play again? (Y/N)") # asks if the user wants to play again
+    while True: # Keeps asking the user if they want to play again. If they enter anything else than Y or N the program will keep asking until the user gives a valid input
+        play_again = input("Do you want to play again? (Y/N): ").upper()
+        if play_again == "Y" or play_again == "N":
+            break
+        else:
+            print("Wrong input")
+
